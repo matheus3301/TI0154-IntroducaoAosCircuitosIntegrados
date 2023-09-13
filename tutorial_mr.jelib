@@ -1,0 +1,41 @@
+# header information:
+Htutorial_mr|9.07
+
+# Views:
+Vschematic|sch
+
+# Cell nand2;1{sch}
+Cnand2;1{sch}||schematic|1693868553283|1693869104134|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NGround|gnd@0||-5|-4||||
+NTransistor|nmos@0||-7|6|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)S2|ATTR_width(D5G1;X0.5;Y-1;)S12
+NTransistor|nmos@1||-7|1|||R||ATTR_length(D5G0.5;X-0.5;Y-1;)S2|ATTR_width(D5G1;X0.5;Y-1;)S12
+NWire_Pin|pin@0||-9|17||||
+NWire_Pin|pin@1||-22|6||||
+NWire_Pin|pin@2||-22|1||||
+NWire_Pin|pin@4||-15|1||||
+NWire_Pin|pin@6||-12|10||||
+NWire_Pin|pin@7||-5|10||||
+NWire_Pin|pin@8||0|10||||
+NTransistor|pmos@0||-14|15|||R|2|ATTR_length(D5G0.5;X-0.5;Y-1;)S2|ATTR_width(D5G1;X0.5;Y-1;)S12
+NTransistor|pmos@1||-7|15|||R|2|ATTR_length(D5G0.5;X-0.5;Y-1;)S2|ATTR_width(D5G1;X0.5;Y-1;)S12
+NPower|pwr@0||-9|20||||
+Awire|net@0|||2700|gnd@0||-5|-2|nmos@1|s|-5|-1
+Awire|net@1|||2700|nmos@1|d|-5|3|nmos@0|s|-5|4
+Awire|net@4|||1800|pmos@0|d|-12|17|pin@0||-9|17
+Awire|net@5|||900|pwr@0||-9|20|pin@0||-9|17
+Awire|net@6|||0|pmos@1|d|-5|17|pin@0||-9|17
+Awire|net@12|||0|nmos@1|g|-8|1|pin@4||-15|1
+Awire|net@13|||0|pin@4||-15|1|pin@2||-22|1
+Awire|net@14|||900|pmos@0|g|-15|15|pin@4||-15|1
+Awire|net@16|||0|nmos@0|g|-8|6|pin@1||-22|6
+Awire|net@17|||900|pmos@1|g|-8|15|nmos@0|g|-8|6
+Awire|net@19|||900|pmos@0|s|-12|13|pin@6||-12|10
+Awire|net@20|||900|pmos@1|s|-5|13|pin@7||-5|10
+Awire|net@21|||900|pin@7||-5|10|nmos@0|d|-5|8
+Awire|net@22|||1800|pin@6||-12|10|pin@7||-5|10
+Awire|net@23|||1800|pin@7||-5|10|pin@8||0|10
+Ea||D5G2;|pin@2||I
+Eb||D5G2;|pin@1||I
+Ey||D5G2;|pin@8||O
+X
